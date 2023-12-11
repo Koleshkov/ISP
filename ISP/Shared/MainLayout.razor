@@ -1,0 +1,13 @@
+﻿@inherits LayoutComponentBase
+
+<div class="vertical_stacklayout">
+    <NavBar Title="ISCards" >
+        @* <a class="navbar_item" href="/About">Об авторе</a> *@
+    </NavBar>
+    <div class="horizontal_stacklayout">
+        <SideBar />
+        <div class="vertical_stacklayout">
+            @Body
+        </div>
+    </div>
+</div>
