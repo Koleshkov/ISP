@@ -16,14 +16,14 @@ namespace ISP
             var services = builder.Services;
             var configuration = builder.Configuration;
 
-            services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             //Add Services
-            services.AddTransient<IPassengerCardService, PassengerCardService>();
+            services.AddSingleton<IPassengerCardService, PassengerCardService>();
 
             //Add PageModels
-            services.AddTransient<PassengerCardPageModel>();
-            services.AddTransient<SendingListPageModel>();
+            services.AddSingleton<PassengerCardPageModel>();
+            services.AddSingleton<SendingListPageModel>();
 
             await builder.Build().RunAsync();
         }
