@@ -19,11 +19,11 @@ namespace ISP
             services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             //Add Services
-            services.AddTransient<IPassengerCardService, PassengerCardService>();
+            services.AddScoped<IPassengerCardService, PassengerCardService>();
 
             //Add PageModels
-            services.AddTransient<PassengerCardPageModel>();
-            services.AddTransient<SendingListPageModel>();
+            services.AddScoped<PassengerCardPageModel>();
+            services.AddScoped<SendingListPageModel>();
 
             await builder.Build().RunAsync();
         }
