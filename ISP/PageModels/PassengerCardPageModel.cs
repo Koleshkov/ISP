@@ -8,7 +8,7 @@ namespace ISP.PageModels
         private readonly IConfiguration? configuration;
         private readonly IPassengerCardService passengerCardService;
 
-        public PassengerCard PassengerCard { get; set; } = new();
+        public PassengerCard PassengerCard { get; set; }
         public List<string> Departments { get; set; }
         public List<string> TarnsportOraganizations { get; set; }
 
@@ -19,6 +19,8 @@ namespace ISP.PageModels
 
             Departments = configuration.GetSection("Options:Departments").Get<List<string>>() ?? new List<string> { "Пусто" };
             TarnsportOraganizations = configuration.GetSection("Options:TransportOrganizations").Get<List<string>>() ?? new List<string> { "Пусто" };
+
+            PassengerCard = new();
         }
 
         public override async Task CreateCardAsync()

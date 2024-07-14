@@ -148,7 +148,7 @@ namespace ISP.Models
 
         //Комментарий пассажира
         [MinLength(2, ErrorMessage = "Заполните комментарий пассажира")]
-        public string PassengerComment { get; set; } = "";
+        public string PassengerComment { get; set; } = string.Empty;
 
 
         //Незамедлительные действия
@@ -157,7 +157,7 @@ namespace ISP.Models
 
         //Заключительные мероприятия
         [MinLength(2, ErrorMessage = "Заполните заключительные мероприятия")]
-        public string FinalActions { get; set; } = "";
+        public string? FinalActions { get; set; } = "";
 
         //Ответственный
         [MinLength(2, ErrorMessage = "Укажите ответственного")]

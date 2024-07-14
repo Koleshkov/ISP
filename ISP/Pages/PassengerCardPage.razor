@@ -1,6 +1,7 @@
 ﻿@page "/"
 @page "/PassengerCard"
 
+
 @using ISP.PageModels
 @using System.Text.Json
 @inject PassengerCardPageModel pagemodel;
@@ -327,7 +328,7 @@
             <label class="title">Комментарий пассажира:</label>
             <div class="input_group">
                 <InputTextArea class="form-control" rows="6"
-                               @bind-Value="@pagemodel.PassengerCard.PassengerComment" />
+                               @bind-Value="@pagemodel.PassengerCard.PassengerComment"/>
             </div>
 
             @if (pagemodel.PassengerCard.WorkStopped || pagemodel.PassengerCard.ViolationDetected)
@@ -358,9 +359,6 @@
                                @bind-Value="@pagemodel.PassengerCard.Deadline" />
                 </div>
 
-                @if (pagemodel.PassengerCard.PassengerComment == "   ")
-                    pagemodel.PassengerCard.PassengerComment = "";
-
                 @if (pagemodel.PassengerCard.Actions == "   ")
                     pagemodel.PassengerCard.Actions = "";
 
@@ -376,7 +374,6 @@
             }
             else
             {
-                pagemodel.PassengerCard.PassengerComment = "   ";
                 pagemodel.PassengerCard.Actions = "   ";
                 pagemodel.PassengerCard.FinalActions = "   ";
                 pagemodel.PassengerCard.Responsible = "   ";
