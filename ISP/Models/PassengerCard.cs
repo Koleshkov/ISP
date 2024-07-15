@@ -147,7 +147,7 @@ namespace ISP.Models
 
 
         //Комментарий пассажира
-        [MinLength(2, ErrorMessage = "Заполните комментарий пассажира")]
+        //[MinLength(2, ErrorMessage = "Заполните комментарий пассажира")]
         public string PassengerComment { get; set; } = string.Empty;
 
 
