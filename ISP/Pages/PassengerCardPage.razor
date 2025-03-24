@@ -111,94 +111,94 @@
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.SafeLaneChange" />
                 <label class="form-check-label">Безопасное перестроение из ряда в ряд.</label>
             </div>
-            @if (!pagemodel.PassengerCard.SafeLaneChange) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.SafeLaneChange) pagemodel.PassengerCard.ViolationDetected = true; *@
 
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.KeepingDistance" />
                 <label class="form-check-label">Соблюдает безопасную дистанцию.</label>
             </div>
-            @if (!pagemodel.PassengerCard.KeepingDistance) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.KeepingDistance) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.SpeedLimit" />
                 <label class="form-check-label">Не превышает установленную скорость.</label>
             </div>
-            @if (!pagemodel.PassengerCard.SpeedLimit) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.SpeedLimit) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.SafeBehavior" />
                 <label class="form-check-label">Демонстрирует безопасное поведение.</label>
             </div>
-            @if (!pagemodel.PassengerCard.SafeBehavior) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.SafeBehavior) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.NoCell" />
                 <label class="form-check-label">Не пользуется мобильным телефоном.</label>
             </div>
-            @if (!pagemodel.PassengerCard.NoCell) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.NoCell) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.ControlOfAuto" />
                 <label class="form-check-label">Контролирует ТС на дороге и в плотном транспортном потоке.</label>
             </div>
-            @if (!pagemodel.PassengerCard.ControlOfAuto) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.ControlOfAuto) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.NotEat" />
                 <label class="form-check-label">Не принимает пищу за рулем.</label>
             </div>
-            @if (!pagemodel.PassengerCard.NotEat) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.NotEat) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.UnderstandsRoadConditions" />
                 <label class="form-check-label">Учитывает дорожные условия.</label>
             </div>
-            @if (!pagemodel.PassengerCard.UnderstandsRoadConditions) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.UnderstandsRoadConditions) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.RoadSignRequirements" />
                 <label class="form-check-label">Выполняет требования дорожных знаков разметки и светофоров.</label>
             </div>
-            @if (!pagemodel.PassengerCard.RoadSignRequirements) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.RoadSignRequirements) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.TimelyTurnOffTheLights" />
                 <label class="form-check-label">Своевременно включает световые приборы и сигналы поворота:</label>
             </div>
-            @if (!pagemodel.PassengerCard.TimelyTurnOffTheLights) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.TimelyTurnOffTheLights) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.AttentionToPedestrians" />
                 <label class="form-check-label">Внимательно относится к пешеходам.</label>
             </div>
-            @if (!pagemodel.PassengerCard.AttentionToPedestrians) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.AttentionToPedestrians) pagemodel.PassengerCard.ViolationDetected = true; *@
 
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.GiveWay" />
                 <label class="form-check-label">Уступает движущемся транспортным средствам, имеющим приоритет.</label>
             </div>
-            @if (!pagemodel.PassengerCard.GiveWay) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.GiveWay) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.AutoSafelyInReverse" />
                 <label class="form-check-label">Безопасно управляет Т/C задним ходом.</label>
             </div>
-            @if (!pagemodel.PassengerCard.AutoSafelyInReverse) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.AutoSafelyInReverse) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.HandbrakeUsing" />
                 <label class="form-check-label">При остановке использует ручной тормоз.</label>
 
             </div>
-            @if (!pagemodel.PassengerCard.HandbrakeUsing) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.HandbrakeUsing) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.RestRegime" />
                 <label class="form-check-label">Соблюдает режим труда и отдыха.</label>
             </div>
-            @if (!pagemodel.PassengerCard.RestRegime) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.RestRegime) pagemodel.PassengerCard.ViolationDetected = true; *@
 
 
 
@@ -211,43 +211,43 @@
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.EmergencyKit" />
                 <label class="form-check-label">Наличие в ТС аварийного комплекта.</label>
             </div>
-            @if (!pagemodel.PassengerCard.EmergencyKit) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.EmergencyKit) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.MonitoringSystem" />
                 <label class="form-check-label">Наличие в ТС БСТМС.</label>
             </div>
-            @if (!pagemodel.PassengerCard.MonitoringSystem) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.MonitoringSystem) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.ForeignObjects" />
                 <label class="form-check-label">Наличие посторонних предметов в зоне обзора водителя.</label>
             </div>
-            @if (!pagemodel.PassengerCard.ForeignObjects) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.ForeignObjects) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.RoutePassport" />
                 <label class="form-check-label">Наличие плана поездки.</label>
             </div>
-            @if (!pagemodel.PassengerCard.RoutePassport) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.RoutePassport) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.BusPassport" />
                 <label class="form-check-label">Наличие паспорта автобусного маршрута.</label>
             </div>
-            @if (!pagemodel.PassengerCard.BusPassport) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.BusPassport) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.SeatBeltsFastened" />
                 <label class="form-check-label">Водитель и пассажир пристёгнуты ремнями.</label>
             </div>
-            @if (!pagemodel.PassengerCard.SeatBeltsFastened) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.SeatBeltsFastened) pagemodel.PassengerCard.ViolationDetected = true; *@
 
             <div class="input_group">
                 <InputCheckbox class="form-check-input" @bind-Value="@pagemodel.PassengerCard.CargoFixed" />
                 <label class="form-check-label">Груз зафиксирован.</label>
             </div>
-            @if (!pagemodel.PassengerCard.CargoFixed) pagemodel.PassengerCard.ViolationDetected = true;
+            @* @if (!pagemodel.PassengerCard.CargoFixed) pagemodel.PassengerCard.ViolationDetected = true; *@
 
 
             <label class="title">Дорожные условия:</label>

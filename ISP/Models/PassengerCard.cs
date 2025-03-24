@@ -27,6 +27,8 @@ namespace ISP.Models
         //Тип авто в таблице просто чек боксы
         public string TypeOfAuto { get; set; } = "0";
 
+
+        #region Осмотр ТС
         //Наличие в ТС аварийного комплекта
         public bool EmergencyKit { get; set; } = true;
 
@@ -47,7 +49,7 @@ namespace ISP.Models
 
         //Груз зафиксирован
         public bool CargoFixed { get; set; } = true;
-
+        #endregion
 
 
         //Безопасное перестроение из ряда в ряд
