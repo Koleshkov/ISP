@@ -1,0 +1,58 @@
+﻿.form_title {
+    align-content:center;
+    text-align:center;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.input_group {
+    padding: 10px;
+}
+.job_is_stopped_container{
+    display:flex;
+    flex-direction:row;
+    justify-content:start;
+    align-items:center;
+}
+.red_rectangle {
+    height: 75px;
+    width: 75px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: red;
+    margin:10px;
+}
+.job_is_stopped_check{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.job_is_stopped_title{
+    color:white;
+    font-size:12pt;
+    font-weight:bold;
+    margin-left:10px;
+}
+
+.title {
+    padding: 10px;
+    font-weight: bold;
+}
+.input_btn_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.add_comp_hidden{
+    display: none;
+}
+
+.add_comp_visible {
+    display: block;
+}

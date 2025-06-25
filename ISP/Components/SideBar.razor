@@ -1,0 +1,22 @@
+﻿
+<div class="sidebar_body" />
+<div class="sidebar">
+    <div class="sidebar_menu">
+        <NavLink class="sidebar_menu_item" href="" Match="NavLinkMatch.All">
+            <span class="fa-solid fa-car icon"></span>
+            <span class="sidebar_menu_item_title">Карта пассажира</span>
+        </NavLink>
+
+        <NavLink class="sidebar_menu_item" href="SendingList">
+            <span class="fa-solid fa-list icon"></span>
+            <span class="sidebar_menu_item_title">Список рассылки</span>
+        </NavLink>
+        
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

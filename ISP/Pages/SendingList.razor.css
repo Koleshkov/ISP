@@ -1,0 +1,14 @@
+﻿.form_title {
+    align-content: center;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.input_group {
+    padding: 10px;
+}
+
+.title {
+    padding: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+﻿.about_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about_item {
+    font-size: 20pt;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+    .about_item:hover {
+        color: #F6B43A;
+        transition: 0.5s;
+    }
+
+.about_header {
+    font-size: 20pt;
+    font-weight:bold;
+}
+
+.about_footer{
+    color:#444;
+}
